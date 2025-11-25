@@ -15,6 +15,8 @@ print("connected, server version: ",connected.get_server_info())
 cursor = connected.cursor()
 cursor.execute("SELECT * FROM customers")
 
+# cursor.execute("SELECT * FROM employees with M in name") ##complit
+# 29
 
 
 data = cursor.fetchall()
